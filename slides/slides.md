@@ -8,3 +8,7 @@
 
 This is a test of the example in [A reveal.js Docker Base Image with
 ONBUILD](http://mindtrove.info/a-reveal.js-docker-base-image-with-onbuild/).
+
+---
+
+## FIN
