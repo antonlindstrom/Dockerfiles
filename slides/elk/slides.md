@@ -77,7 +77,19 @@ audits and looking at different email patterns.
 
 ---
 
-# FIN
+Syslog -> Logstash -> RabbitMQ -> Logstash -> Elasticsearch
+
+Note:
+We are shipping logs via Syslog, to Logstash, then queuing the log entries in
+RabbitMQ as a buffer so we can parse and index the logs at slow and steady
+pace. The entries are then indexed in Elasticsearch.
+
+---
+
+### Elasticsearch, Logstash, Kibana
+
+Note:
+These are great tools that simplifies reading and storing logs.
 
 ---
 
