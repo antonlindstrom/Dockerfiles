@@ -53,26 +53,25 @@ Puppet to draw a map of all our nodes.
 ## Facter
 
   ```
-    root@ermahgerd:~# facter
-      architecture => amd64
-        domain => example.com
-          facterversion => 1.6.10
-            fqdn => ermahgerd.example.com
-              hardwareisa => x86_64
-                ipaddress_eth0 => 192.168.11.80
-                  ipaddress_lo => 127.0.0.1
-                    is_virtual => false
-                      ```
+  root@ermahgerd:~# facter
+  architecture => amd64
+  domain => example.com
+  facterversion => 1.6.10
+  fqdn => ermahgerd.example.com
+  hardwareisa => x86_64
+  ipaddress_eth0 => 192.168.11.80
+  ipaddress_lo => 127.0.0.1
+  is_virtual => false
+  ```
 
-                      Note:
-                      Enter facter, the system that collects facts.
+Note:
+Enter facter, the system that collects facts.
 
-                      ---
+---
 
-                      ![Foreman
-                      screenshot](http://projects.theforeman.org/attachments/download/319/dashboard.png)
+![Foreman screenshot](http://projects.theforeman.org/attachments/download/319/dashboard.png)
 
-                      ---
+---
 
 ## Puppet DSL
 
@@ -80,31 +79,31 @@ Puppet to draw a map of all our nodes.
   package { 'apache2':
     ensure => present,
   }
-    ```
+  ```
 
-      ```ruby
-      file { '/etc/motd':
-      ensure => present,
-      content => "Hello World\n",
-      owner => root,
-      group => root,
-      }
-        ```
+  ```ruby
+  file { '/etc/motd':
+  ensure => present,
+  content => "Hello World\n",
+  owner => root,
+  group => root,
+  }
+  ```
 
-          ```ruby
-          user { 'anton':
-            ensure => present,
-          }
-            ```
+  ```ruby
+  user { 'anton':
+  ensure => present,
+  }
+  ```
 
-            Note:
-            Puppet has an own Domain Specific Language, it is built to be
-            simple for sysadmins to use and the biggest caveats is that it is
-            declarative and resources can run in any order unless declared
-            otherwise. Package is the same syntax no matter which platform you
-            are running.
+  Note:
+  Puppet has an own Domain Specific Language, it is built to be
+  simple for sysadmins to use and the biggest caveats is that it is
+  declarative and resources can run in any order unless declared
+  otherwise. Package is the same syntax no matter which platform you
+  are running.
 
-            ---
+---
 
 ### The catalog: compiled resources
 
