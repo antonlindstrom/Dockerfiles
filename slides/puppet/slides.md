@@ -96,12 +96,12 @@ Enter facter, the system that collects facts.
   }
   ```
 
-  Note:
-  Puppet has an own Domain Specific Language, it is built to be
-  simple for sysadmins to use and the biggest caveats is that it is
-  declarative and resources can run in any order unless declared
-  otherwise. Package is the same syntax no matter which platform you
-  are running.
+Note:
+Puppet has an own Domain Specific Language, it is built to be
+simple for sysadmins to use and the biggest caveats is that it is
+declarative and resources can run in any order unless declared
+otherwise. Package is the same syntax no matter which platform you
+are running.
 
 ---
 
