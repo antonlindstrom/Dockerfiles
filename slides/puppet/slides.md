@@ -75,26 +75,26 @@ Enter facter, the system that collects facts.
 
 ## Puppet DSL
 
-  ```ruby
-  package { 'apache2':
-    ensure => present,
-  }
-  ```
-
-  ```ruby
-  file { '/etc/motd':
+```ruby
+package { 'apache2':
   ensure => present,
-  content => "Hello World\n",
-  owner => root,
-  group => root,
-  }
-  ```
+}
+```
 
-  ```ruby
-  user { 'anton':
-  ensure => present,
-  }
-  ```
+```ruby
+file { '/etc/motd':
+ensure => present,
+content => "Hello World\n",
+owner => root,
+group => root,
+}
+```
+
+```ruby
+user { 'anton':
+ensure => present,
+}
+```
 
 Note:
 Puppet has an own Domain Specific Language, it is built to be
