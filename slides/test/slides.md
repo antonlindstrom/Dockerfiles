@@ -18,4 +18,8 @@ This is a note
 
 ---
 
+![docker-logo](https://www.docker.io/static/img/homepage-docker-logo.png)
+
+---
+
 ## FIN
