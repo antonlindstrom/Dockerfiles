@@ -22,4 +22,9 @@ This is a note
 
 ---
 
+* Simple
+* Automatic
+
+---
+
 ## FIN
